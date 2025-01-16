@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "currency-xchange-ed31c": {
+      "hosting": {
+        "converto": [
+          "currency-xchange-ed31c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "currency-xchange-ed31c"
+  }
+}
