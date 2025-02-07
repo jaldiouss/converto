@@ -99,18 +99,7 @@
     }
   }
 </style>
-
-<main class="main">
-  <div class="content">
-    <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
-    <div *ngIf="!errorMessage">
-      <h3>Liste des devises disponibles</h3>
-      <ul>
-        <li *ngFor="let currency of currencies">{{ currency }}</li>
-      </ul>
-    </div>
-  </div>
-</main>
+<button (click)="navigateToLogin()">Se connecter</button>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->

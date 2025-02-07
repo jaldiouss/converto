@@ -11,8 +11,11 @@ export class AppComponent implements OnInit {
   currencies: string[] = [];
   errorMessage: string | null = null;
 
-  constructor(private ApiService: ApiService) {}
+  constructor(private router: Router, private ApiService: ApiService) {}
 
+  navigateToLogin() {
+    this.router.navigate(['/login']);
+  }
   ngOnInit(): void {
     this.ApiService.getCurrencies().subscribe(
       (data) => {
@@ -25,3 +28,6 @@ export class AppComponent implements OnInit {
     );
   }
 }
+
+
+import { Router } from '@angular/router';
